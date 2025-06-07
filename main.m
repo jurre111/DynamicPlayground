@@ -1,6 +1,9 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #include <dlfcn.h>
+#include <mach/mach.h>
+#include <sys/mman.h>
+
 
 #define ASM(...) __asm__(#__VA_ARGS__)
 // ldr x8, value; br x8; value: .ascii "\x41\x42\x43\x44\x45\x46\x47\x48"
